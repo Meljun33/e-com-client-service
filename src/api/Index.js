@@ -6,14 +6,14 @@ export default {
 
         http.interceptors.request.use((config)=>{
             const token = "";
-            
+
             config.headers.Accept = "application/json";
             config.headers.Authorization = 'Bearer ${Token}';
 
             return config;
 
-        })
+        });
 
-    }
+    };
 
 }

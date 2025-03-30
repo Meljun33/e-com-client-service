@@ -1,6 +1,7 @@
 import axios from "axios";
 
-http (baseUrl){
+const http = (baseUrl)=>{
+
     const http = axios.create({baseURL: baseUrl})
 
     http.interceptors.request.use((config)=>{
